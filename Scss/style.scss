@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	background-color: #99d128;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container{
+	position: relative;
+	max-width: 300px;
+	width: 100%;
+	border-radius: 12px;
+	padding: 15px 25px 25px;
+	background: #fff;
+}
+
+header{
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.input_field{
+	position: relative;
+	height: 45px;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.refresh_button{
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	background: #14141c;
+	height: 3rem;
+	width: 3rem;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	
+}
+
+.input_field input,
+.button buton {
+	height: 100%;
+	width: 100%;
+ 	outline: none;
+ 	border: none;
+ 	border-radius: 8px;
+}
+
+.input_field input{
+	padding: 0 15px;
+	border: 1px solid rgb(163, 161, 161);
+}
+
+.captach_box input{
+	color:#6b6b6b;
+	font-size: 22px;
+	 pointer-events: none;
+}
+
+.message{
+	font-style: 14px;
+	margin: 14px 0;
+	color: #222620;
+	display: none;
+}
+
+.message:active{
+	display: block;
+}
+
+.button button{
+	margin-top: 14px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button button:hover{
+	background-color: #140f0f;
+}
+
+
+.button.disabled{
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.clear_btn{
+	padding: 12px 24px;
+	margin-top: 14px;
+	font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+}
