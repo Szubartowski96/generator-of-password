@@ -2,6 +2,6 @@ It's a simple app that helps generate passwords. The default length of the passw
 
 Stack i'm using in this application:
 
-Vanilla JavaScript
-HTML
-CSS
+- Vanilla JavaScript
+- HTML
+- CSS
