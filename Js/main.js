@@ -24,9 +24,14 @@ const refreshBtnClick = () => {
 }
 
 const captchaKeyUpValidate = () => {
-	submitBtn.classList.toggle("disabled", !captchaInputBox.value);
+	const inputValue = captchaInputBox.value;
+    const isSixCharacters = inputValue.length === 6;
 
-	if(!captchaInputBox.value) mess.classList.remove('active');
+    submitBtn.classList.toggle("disabled", !isSixCharacters);
+
+    if (!isSixCharacters) {
+        mess.classList.remove('active');
+}
 }
 
 const submitBtnClick = () => {
